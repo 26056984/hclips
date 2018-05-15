@@ -12,16 +12,7 @@
 (deffunction selected-item (?name)
       (if (eq ?name cola)
 	    then
-		(bind ?itemcost 8.50))
-	  (if (eq ?name orange)
-	    then
-		(bind ?itemcost 10.00))
-	  (if (eq ?name sweets)
-	    then
-		(bind ?itemcost 12.50))
-	  (if (eq ?name chocolate)
-	    then
-		(bind ?itemcost 15.00))
+
 (while (> ?itemcost 0)
    (printout t "add money ")
    (bind ?itemcost(- ?itemcost(input-money (read))))
